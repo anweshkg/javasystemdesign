@@ -9,8 +9,9 @@ public class ShoppingCart {
         productList = new ArrayList<>();
     }
 
-    public void addtocart(){
-
+    public void addtocart(Product product){
+        Product productWithEligibleDiscount= new TypeCouponDecorator(new PercentageCouponDecorator(product, 10), 5, product.getType());
+        productList.add(productWithEligibleDiscount);
     }
 
     public int getTotalPriceOfCart(){
