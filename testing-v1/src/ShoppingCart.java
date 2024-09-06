@@ -14,8 +14,8 @@ public class ShoppingCart {
         productList.add(productWithEligibleDiscount);
     }
 
-    public int getTotalPriceOfCart(){
-        int totalPrice=0;
+    public double getTotalPriceOfCart(){
+        double totalPrice=0;
         for(Product p: productList){
             totalPrice += p.getPrice();  //here
         }

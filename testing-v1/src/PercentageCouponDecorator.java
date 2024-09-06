@@ -8,7 +8,7 @@ public class PercentageCouponDecorator extends CouponDecorator {
 
     @Override
     public double getPrice(){
-        double price = product.orignalprice;
+        double price = product.getPrice();
         return price - (price*discountPercentage)/100;
     }
 }

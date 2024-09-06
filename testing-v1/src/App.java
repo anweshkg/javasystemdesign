@@ -1,6 +1,5 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
         Product item1= new Item1("dosa", 100, ProductType.Food);
         ShoppingCart cart = new ShoppingCart();
         cart.addtocart(item1);

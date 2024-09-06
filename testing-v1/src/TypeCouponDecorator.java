@@ -16,7 +16,7 @@ public class TypeCouponDecorator extends CouponDecorator{
 
     @Override
     public double getPrice(){
-        double price = product.orignalprice;
+        double price = product.getPrice();
         if(eligibleTypes.contains(type)){
             return price - (price*typeDiscountPercentage)/100;
         }
