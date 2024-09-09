@@ -1,5 +1,5 @@
 public class App {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         Product item1= new Item1("dosa", 100, ProductType.Food);
         ShoppingCart cart = new ShoppingCart();
         cart.addtocart(item1);
