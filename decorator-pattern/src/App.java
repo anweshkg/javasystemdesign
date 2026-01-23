@@ -4,5 +4,7 @@ public class App {
         ShoppingCart cart = new ShoppingCart();
         cart.addtocart(item1);
         System.out.println(cart.getTotalPriceOfCart());
+        System.out.println(cart.getTotalPriceOfCart());
     }
 }
+
